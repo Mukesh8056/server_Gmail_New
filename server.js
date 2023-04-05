@@ -18,9 +18,9 @@ app.use (express.json())
 
 app.use(express.urlencoded({extended:false}));
 
-const users = require("../server/router/users")
-const auth = require("../server/router/auth")
-const mail = require("../server/router/mail")
+const users = require("../server/src/router/users")
+const auth = require("../server/src/router/auth")
+const mail = require("../server/src/router/mail")
 
 app.use("/users", users)
 app.use("/auth", auth)
